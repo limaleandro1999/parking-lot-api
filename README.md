@@ -4,7 +4,7 @@
 
 - Python
 - Django
-- Django Rest Framework
+- Django REST Framework
 - Django Admin
 - DRF yasg
 
