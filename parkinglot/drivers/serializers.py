@@ -16,3 +16,6 @@ class DriverSerializer(serializers.ModelSerializer):
         if len(value) is not 11:
             raise serializers.ValidationError('CPF is invalid')
         return value
+
+class DriverAgeResponseSerializer(serializers.Serializer):
+    age = serializers.IntegerField()
