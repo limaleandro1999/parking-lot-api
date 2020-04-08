@@ -1,4 +1,8 @@
-from parkinglot.drivers.serializers import DriverAgeResponseSerializer
+from parkinglot.drivers.serializers import (
+    DriverAgeResponseSerializer, 
+    DriverRemoveCarBodySerializer, 
+    DriverRemoveCarResponseSerializer,
+)
 
 driver_cars_schema = dict(
     operation_description="Return all driver cars",
@@ -12,5 +16,12 @@ driver_age_schema = dict(
     responses={
         200: DriverAgeResponseSerializer,
         404: "Driver not found."
+    }
+)
+
+driver_remove_car_schema = dict(
+    request_body=DriverRemoveCarBodySerializer,
+    responses={
+        200: DriverRemoveCarResponseSerializer
     }
 )

@@ -19,3 +19,10 @@ class DriverSerializer(serializers.ModelSerializer):
 
 class DriverAgeResponseSerializer(serializers.Serializer):
     age = serializers.IntegerField()
+
+class DriverRemoveCarBodySerializer(serializers.Serializer):
+    car_id = serializers.IntegerField()
+
+class DriverRemoveCarResponseSerializer(serializers.Serializer):
+    removed = serializers.BooleanField()
+    car = CarSerializer(many=False)

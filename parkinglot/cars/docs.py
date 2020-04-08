@@ -1,7 +1,7 @@
 from parkinglot.cars.serializers import (
     ParkCarBodySerializer, 
     ParkCarResponseSerializer, 
-    CarPaysIpvaResponseSerializer
+    CarPaysIpvaResponseSerializer,
 )
 
 park_car_schema = dict(
